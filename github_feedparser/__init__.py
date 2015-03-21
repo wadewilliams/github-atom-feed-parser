@@ -18,10 +18,6 @@ class GitHubFeedParser:
 
         self.endpoint = 'http://github.com/%s/%s/commits/master.atom' % (self.owner, self.repo)
 
-        # Parse the feed and die here if we need to.
-        self._parse()
-
-    def _parse(self):
         self.feed = feedparser.parse(self.endpoint)
 
         if self.feed['bozo'] == 1:

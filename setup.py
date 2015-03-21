@@ -4,7 +4,7 @@ setup(
     name = 'github_feedparser',
     packages = ['github_feedparser'],
     install_requires = ['feedparser==5.1.3'],
-    version = '0.1',
+    version = '0.1.1',
     license = 'MIT',
     description = 'Python module to parse a GitHub repository\'s Atom Feed',
     author = 'Wade Williams',
